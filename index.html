@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <title>Page Title</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+            text-align: right;
+        }
+        .content {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px; /* Add margin-top to create space */
+        }
+        .blue {
+            color: blue;
+        }
+        .lorem {
+            font-size: 14px; /* Decrease font size */
+            margin-top: 20px; /* Add margin-top to create space */
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "montserrat", sans-serif;
+        }
+        .testimonials {
+            padding: 40px 0;
+            background: black;
+            color: #434343;
+            text-align: center;
+        }
+        .inner {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        .border {
+            width: 160px;
+            height: 5px;
+            background: #6ab04c;
+            margin: 26px auto;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .col {
+            flex: 33.33%;
+            max-width: 33.33%;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+        .testimonial {
+            background: #fff;
+            padding: 30px;
+        }
+        .testimonial img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .name {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+        .stars {
+            color: #6ab04c;
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width:960px) {
+            .col {
+                flex: 100%;
+                max-width: 80%;
+            }
+        }
+        @media screen and (max-width:600px) {
+            .col {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Our Students Are<span class="blue"> Our Strength</span><br>See What They Say About Us</h1>
+        </div>
+        <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="testimonials">
+            <div class="inner">
+                <h1>Rewining Us...</h1>
+                <div class="border"></div>
+                <div class="row">
+                    <div class="col">
+                        <div class="testimonial">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMXGqCy--6Nx6iG1UZE9lkBH8a2mYms8P9xQ&usqp=CAU" alt="">
+                            <div class="name">John</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="testimonial">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTUBVwLP5jVboU-bMG8JUcYBrKJskA3y_Ow&usqp=CAU" alt="">
+                            <div class="name">Rocky</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="testimonial">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBmi17w0F_-WzLCbMH_rDkZes4hYdKbTuodA&usqp=CAU" alt="">
+                            <div class="name">Alice</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="testimonial">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzYsXVYaHFcmUfpk24QXI1V8BihLPV6eJWVzFv4cpcb0eCHNQEwZjGHKDtVDnMtne7JYQ&usqp=CAU" alt="">
+                                <div class="name">Priya</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="testimonial">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeIX_RE5vNpE0kN57TCh3VhE6MXA4jsFxXgW1aVe0HXFVQHObqUkG0pYdBrTJNFvWnVu0&usqp=CAU" alt="">
+                                <div class="name">Hannah</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

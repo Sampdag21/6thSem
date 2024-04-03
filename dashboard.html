@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sidebar Navigation</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .sidebar {
+        width: 250px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        padding-top: 60px; /* Height of the top navigation bar */
+    }
+    .sidebar h2 {
+        color: #fff;
+        padding: 10px 20px;
+        margin: 0;
+    }
+    .sidebar a {
+        display: block;
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+    .sidebar a:hover {
+        background-color: #555;
+    }
+    .content {
+        margin-left: 250px; /* Same as the width of the sidebar */
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Profiles</h2>
+    <a href="myaccount.html">My Account</a>
+    <a href="changepassword.html">Change Password</a>
+    <a href="login.html">Login</a>
+    <a href="courses.html">Courses</a>
+</div>
+
+<div class="content">
+    <!-- Content of the main page goes here -->
+</div>
+
+</body>
+</html>

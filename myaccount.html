@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Account</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #222;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #ccc;
+        margin: 0 auto 20px;
+        overflow: hidden;
+        position: relative; /* Added position relative */
+    }
+
+    .profile-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .camera-icon {
+        position: absolute; /* Position the camera icon */
+        top: 5px;
+        right: 5px;
+        color: #fff;
+        cursor: pointer; /* Add cursor pointer */
+    }
+
+    .panel {
+        background-color: #333;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+
+    .panel h3 {
+        margin-bottom: 10px;
+    }
+
+    .panel p {
+        margin: 0;
+    }
+
+    .update-button {
+        display: inline-block;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .update-button:hover {
+        background-color: #45a049;
+    }
+
+    .text-holder {
+        width: 80%;
+        margin: 0 auto 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    /* Added styles for left-aligning the text-holder */
+    .text-holder-left {
+        text-align: left;
+        padding-left: 50px; /* Added padding for left alignment */
+    }
+
+    /* Added styles for separating name and email placeholders */
+    .text-holder-left input {
+        width: 100%;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .text-holder-left input:first-child {
+        margin-bottom: 20px;
+    }
+
+    /* Hidden input file */
+    #fileInput {
+        display: none;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="profile-picture">
+        <!-- You can replace the image URL with your own -->
+        <img src="https://via.placeholder.com/150" alt="Profile Picture">
+        <label for="fileInput" class="camera-icon"><i class="fas fa-camera"></i></label> <!-- Camera icon -->
+        <input type="file" id="fileInput" accept="image/*"> <!-- Hidden input file -->
+    </div>
+    <div class="panel">
+        <div class="text-holder text-holder-left"> <!-- Applied class for left alignment -->
+            <input type="text" placeholder="Name"> <!-- Updated placeholder -->
+            <input type="email" placeholder="Email"> <!-- Updated placeholder -->
+        </div>
+    </div>
+    <a href="#" class="update-button">Update</a>
+</div>
+<script>
+    // Trigger file input when camera icon is clicked
+    document.querySelector('.camera-icon').addEventListener('click', function() {
+        document.getElementById('fileInput').click();
+    });
+</script>
+</body>
+</html>
